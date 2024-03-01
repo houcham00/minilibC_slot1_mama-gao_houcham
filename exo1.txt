@@ -1,0 +1,30 @@
+Exercice:
+
+You have to implement a function which takes two parameters. The first one is
+a string and the second one is the character X to find in this string.
+If you find the first occurence of the character X, then get the character Y next to him. The goal of this
+exercice is to return the next character (Y+1) of the alphabet, of this next character (Y).
+
+Example:
+    my_add("Mourad est gEntil", 'a')     ====> 'd' from ("Mourad")      ====> return ('e')
+    my_add("Mourad est gEntil", 'e')     ====> 's' from ("est")         ====> return ('t')
+    my_add("Mourad est gEntil", 'g')     ====> 'E' from ("gEntil")      ====> return ('F')
+    my_add("Mourad est gEntil", 't')     ====> 'g' from ("gEntil")      ====> return ('h')
+    my_add("Mourad est gEntil", 'Z')     ====>       NULL               ====> return ('@')
+    my_add("Mourad est gEntil", '\0')    ====>       NULL               ====> return ('@')
+    my_add("Mourad est gEntil", NULL)    ====>       NULL               ====> return ('@')
+    my_add("", NULL)                     ====>       NULL               ====> return ('@')
+
+Pay attention, we only want alphabetics characters, so if the next character is not an alphabetic character,
+move on till finding an alphabetic one.
+
+
+Steps:
+
+1) Name your file fac.asm
+
+2) Name your function "my_add" and don't forget to import it (global)
+
+3) Compile with: "make re"
+
+4) Test with: ./main
